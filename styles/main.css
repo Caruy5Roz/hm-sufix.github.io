@@ -1,0 +1,950 @@
+@import url(reset.css);
+@import url(media768.css);
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.header {
+    background: rgba(255, 255, 255, 1);
+}
+
+.header-inner {
+    min-height: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-btn {
+    width: 24px;
+    height: 19px;
+    background-color: #fff;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    margin: 0 61px 0 23px;
+}
+
+.menu-btn::after {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 0;
+    box-shadow: 0 20px 0 0 rgba(0, 0, 0, 1);
+}
+
+.menu-btn::before {
+    content: "";
+    width: 19px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 8;
+}
+
+.menu-list {
+    display: none;
+}
+
+.close {
+    margin: 49px 570px 49px 47px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: none;
+    position: relative;
+}
+
+.close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 32px;
+    width: 3px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.logo {
+    width: 105px;
+}
+
+.left-slider {
+    width: 320px;
+    height: 294px;
+    background-image: url(../images/philip-martin-320.png);
+    margin: 0;
+}
+
+.right-slider {
+    width: 320px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 15px 13px 32px 12px;
+    margin: 0;
+}
+
+.text {
+    color: rgba(255, 255, 255, 1);
+}
+
+.data-white {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 6px;
+}
+
+.text h3 {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    word-spacing: 3.5px;
+}
+
+.text p {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    word-spacing: 1.3px;
+}
+
+.lifestyle-white {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    float: right;
+    display: none;
+}
+
+.read-more {
+    width: 198px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.read-more a {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.featured {
+    width: 295px;
+    margin: 0 auto;
+}
+
+.featured h2 {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1F1F1D;
+    margin: 43px 0 22px 0;
+}
+
+.data-img-1 {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 6px;
+    color: #000000;
+    margin: 10px 0 16px 0;
+}
+
+.lifestyle-1 {
+    display: none;
+}
+
+.big-text {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1F1F1D;
+}
+
+.small-text {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #1F1F1D;
+    margin: 21px 0 27.5px 0;
+}
+
+.data-img {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 6px;
+    color: #000000;
+    margin: 10px 0 16px 0;
+    float: left;
+}
+
+.lifestyle {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    color: #000000;
+    text-decoration: underline;
+    margin: 10px 0 16px 0;
+    float: right;
+}
+
+.wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.atvero {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 10px 0 28px 0;
+}
+
+.see-all {
+    width: 238px;
+    height: 42px;
+    background-color: rgba(48, 48, 48, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 43px 28px;
+}
+
+.see-all a {
+    text-decoration: none;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.issue {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.left-magazine {
+    width: 320px;
+    height: 245px;
+    background-image: url(../images/left-magazine-320.png);
+}
+
+.right-issue {
+    width: 319.72px;
+    height: 174.52px;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.right-issue p {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 27px;
+    word-spacing: 5px;
+}
+
+.subscribe-now {
+    width: 198px;
+    height: 42px;
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-now a {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.interviews h2 {
+    width: 99px;
+    height: 27px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1F1F1D;
+    margin: 43.39px 0 16px 0;
+}
+
+.interviews {
+    width: 295px;
+    margin: 0 auto;
+}
+
+.data-img-2 {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 6px;
+    color: #000000;
+    margin: 10px 0 16px 0;
+    float: left;
+}
+
+.lifestyle-2 {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    color: #000000;
+    text-decoration: underline;
+    margin: 10px 0 16px 0;
+    float: right;
+}
+
+.news {
+    width: 295px;
+    margin: 0 auto;
+}
+
+.news h2 {
+    width: 99px;
+    height: 27px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1F1F1D;
+    margin-bottom: 16px;
+}
+
+.news-small {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    color: #000000;
+    text-decoration: underline;
+    margin: 10px 0 16px 0;
+    float: right;
+}
+
+footer {
+    width: 320px;
+    height: 163px;
+    background-color: rgba(0, 0, 0, 1);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 39px;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-btn {
+        margin-right: 285px;
+    }
+    .container {
+        width: 768px;
+        margin: 0 auto;
+    }
+    .left-slider {
+        width: 385px;
+        height: 354px;
+        background-image: url(../images/philip-martin-768.png);
+        float: left;
+    }
+    .right-slider {
+        width: 383px;
+        height: 354px;
+        padding: 72px 18px 0 21px;
+        float: right;
+    }
+    .text h3 {
+        margin: 20px 0;
+    }
+    .read-more {
+        margin: 31px 0 72px 0;
+    }
+    .wrapper::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .featured {
+        width: 720px;
+        margin: 0 auto;
+    }
+    .featured h2 {
+        height: 20px;
+        margin: 60px 0 21px 0;
+    }
+    .top-left-img {
+        width: 345px;
+        height: 228px;
+        float: left;
+    }
+    .top-right-img {
+        width: 345px;
+        height: 228px;
+        float: right;
+    }
+    .featured-top {
+        height: 450px;
+    }
+    .data-img-1 {
+        float: left;
+        margin-top: 21px;
+    }
+    .lifestyle-1 {
+        font-family: Kanit;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        color: #000000;
+        display: block;
+        float: right;
+        margin-top: 21px;
+    }
+    .featured-smallblocs {
+        margin-top: 36px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .featured-smallblocs img {
+        width: 220px;
+        height: 145px;
+    }
+    .small-left-img {
+        width: 220px;
+    }
+    .small-mid-img {
+        width: 220px;
+    }
+    .small-right-img {
+        width: 220px;
+    }
+    .see-all {
+        margin: 0 auto;
+    }
+    .issue {
+        width: 720px;
+        margin: 0 auto;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+    }
+    .left-magazine {
+        width: 359px;
+        height: 275px;
+        background-size: 100%;
+    }
+    .right-issue {
+        width: 359.69px;
+        height: 275.24px;
+        padding-bottom: 89.49px;
+    }
+    .right-issue>p {
+        margin: 89.74px 92.69px 27px 90px;
+        word-spacing: 1px;
+    }
+    .subscribe-now {
+        width: 198px;
+        height: 42px;
+    }
+    .interviews {
+        width: 720px;
+        margin: 0 auto;
+        margin-top: 53px;
+    }
+    .inter-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 53px;
+    }
+    .inter-img img {
+        width: 220px;
+        height: 145px;
+        margin: 0;
+    }
+    .inter-left {
+        width: 220px;
+    }
+    .inter-mid {
+        width: 220px;
+    }
+    .inter-right {
+        width: 220px;
+    }
+    .news {
+        width: 720px;
+        margin: 0 auto;
+        margin-top: 53px;
+    }
+    .news-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 53px;
+    }
+    .news-img img {
+        width: 220px;
+        height: 145px;
+        margin: 0;
+    }
+    .news-left {
+        width: 220px;
+    }
+    .news-mid {
+        width: 220px;
+    }
+    .news-right {
+        width: 220px;
+    }
+    footer {
+        width: 768px;
+        height: 163px;
+        margin-top: 70px;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .container {
+        width: 1240px;
+    }
+    .menu-btn {
+        margin: 51px 467px 50px 51px;
+    }
+    .logo {
+        width: 157px;
+    }
+    .left-slider {
+        width: 620px;
+        height: 570px;
+        background-image: url(../images/philip-martin-1240.png);
+    }
+    .right-slider {
+        width: 620px;
+        height: 570px;
+        float: right;
+        padding: 0 104px 0 0;
+    }
+    .data-white {
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 7px;
+        margin: 128px 0 0 104px;
+        float: left;
+    }
+    .lifestyle-white {
+        display: inline-block;
+        margin: 125px 0 0 0;
+    }
+    .wrapper::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .text h3 {
+        font-size: 28px;
+        line-height: 42px;
+        margin: 36px 0 23px 104px;
+    }
+    .text p {
+        font-size: 14px;
+        line-height: 21px;
+        margin-left: 104px;
+    }
+    .read-more {
+        height: 55px;
+        margin: 36px 0 0 103px;
+    }
+    .featured {
+        width: 940px;
+        margin: 0 auto;
+    }
+    .featured-top {
+        height: 600px;
+    }
+    .top-left-img {
+        width: 455px;
+        height: 301px;
+        float: left;
+    }
+    .top-right-img {
+        width: 456px;
+        height: 301px;
+        float: right;
+    }
+    .big-text {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        margin: 34px 0 19px 0;
+    }
+    .small-text {
+        font-weight: 300;
+        line-height: 27px;
+        font-size: 18px;
+        word-spacing: 3px;
+    }
+    .featured-smallblocs img {
+        width: 295px;
+        height: 195px;
+    }
+    .small-left-img {
+        width: 295px;
+    }
+    .small-mid-img {
+        width: 295px;
+    }
+    .small-right-img {
+        width: 295px;
+    }
+    .atvero {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .issue {
+        width: 940px;
+        margin: 0 auto;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+    }
+    .left-magazine {
+        width: 470px;
+        height: 360px;
+        background-size: 100%;
+    }
+    .right-issue {
+        width: 469.59px;
+        height: 360px;
+        padding-bottom: 123.33px;
+    }
+    .right-issue>p {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 51px;
+        margin: 123.67px 77.59px 20px 57px;
+    }
+    .subscribe-now {
+        width: 198px;
+        height: 42px;
+    }
+    .interviews {
+        width: 940px;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+    .inter-img {
+        margin-bottom: 60px;
+    }
+    .inter-img img {
+        width: 295px;
+        height: 195px;
+        margin: 0;
+    }
+    .inter-left {
+        width: 295px;
+    }
+    .inter-mid {
+        width: 295px;
+    }
+    .inter-right {
+        width: 295px;
+    }
+    .news {
+        width: 940px;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+    .news-img {
+        margin-bottom: 60px;
+    }
+    .news-img img {
+        width: 295px;
+        height: 195px;
+        margin: 0;
+    }
+    .news-left {
+        width: 295px;
+    }
+    .news-mid {
+        width: 295px;
+    }
+    .news-right {
+        width: 295px;
+    }
+    footer {
+        width: 1240px;
+        height: 163px;
+        margin-top: 87px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1440px;
+        margin: 0 auto;
+    }
+    .header {
+        height: 120px;
+        margin: 0 auto;
+    }
+    .menu-btn {
+        display: none;
+    }
+    .header-inner {
+        min-height: 120px;
+        position: relative;
+    }
+    .close {
+        display: block;
+    }
+    .dropdown {
+        width: 32px;
+        height: 32px;
+        position: relative;
+        display: block;
+        top: -15px;
+    }
+    .logo {
+        position: absolute;
+        left: 638px;
+        top: 43.5px;
+    }
+    .menu-list {
+        width: 344px;
+        height: 359px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.1);
+        padding: 52px 0 0 66px;
+        margin: -25px 0 0 51px;
+        display: none;
+    }
+    .dropdown:hover .menu-list {
+        display: block;
+    }
+    .menu-list ul {
+        margin: 0;
+    }
+    .menu-list li {
+        font-family: Kanit;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration-line: underline;
+        color: #000000;
+        list-style: none;
+        margin: 0 0 14px -40px;
+    }
+    .menu-list li:last-child {
+        margin-bottom: 0;
+    }
+    .left-slider {
+        width: 720px;
+        height: 570px;
+        background-image: url(../images/philip-martin.png);
+    }
+    .right-slider {
+        width: 720px;
+        background-color: rgba(0, 0, 0, 1);
+        padding: 0;
+        float: right;
+    }
+    .data-white {
+        margin: 103px 0 0 100px;
+    }
+    .lifestyle-white {
+        margin: 88px 118px 0 0;
+    }
+    .text h3 {
+        margin: 54px 0 29px 108px;
+    }
+    .text>p {
+        margin: 0 109px 0 108px;
+    }
+    .read-more {
+        margin: 54px 0 0 108px;
+    }
+
+    .featured {
+        width: 1140px;
+        margin: 0 auto;
+    }
+    .featured-top {
+        height: 670px;
+    }
+    .top-left-img {
+        width: 557px;
+        height: 368px;
+        float: left;
+    }
+    .top-right-img {
+        width: 557px;
+        height: 368px;
+        float: right;
+    }
+    .featured-smallblocs{
+        margin-bottom: 63px;
+    }
+    .featured-smallblocs img {
+        width: 363px;
+        height: 240px;
+    }
+    .small-left-img {
+        width: 363px;
+    }
+    .small-mid-img {
+        width: 363px;
+    }
+    .small-right-img {
+        width: 363px;
+    }
+    
+    .issue {
+        width: 1140px;
+    }
+    .left-magazine {
+        width: 571.5px;
+        height: 360px;
+    }
+    .right-issue {
+        width: 571.5px;
+        height: 360px;
+    }
+    .right-issue>p {
+        margin: 123.67px 120.5px 20px 116px;
+    }
+    .interviews {
+        width: 1140px;
+    }
+    .inter-img {
+        margin-bottom: 60px;
+    }
+    .inter-img img {
+        width: 363px;
+        height: 240px;
+    }
+    .inter-left {
+        width: 363px;
+    }
+    .inter-mid {
+        width: 363px;
+    }
+    .inter-right {
+        width: 363px;
+    }
+    .news {
+        width: 1140px;
+    }
+    .news-img {
+        margin-bottom: 60px;
+    }
+    .news-img img {
+        width: 363px;
+        height: 240px;
+        margin: 0;
+    }
+    .news-left {
+        width: 363px;
+    }
+    .news-mid {
+        width: 363px;
+    }
+    .news-right {
+        width: 363px;
+    }
+    footer {
+        width: 1440px;
+        height: 163px;
+        margin-top: 55px;
+    }
+}
